@@ -2,83 +2,124 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Livro de Visitas - Músicas do Momento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: #121212;
-      color: #ffffff;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      background: #f2f2f2;
+      color: #222;
     }
+
     header {
-      background: #1f1f1f;
-      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      padding: 1rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
     }
+
     main {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #1e1e1e;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    form textarea, form input {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
       border-radius: 8px;
-      border: none;
-      background: #2c2c2c;
-      color: #fff;
+      font-size: 1rem;
     }
+
     button {
-      margin-top: 15px;
-      background: #ff004c;
+      padding: 0.8rem;
+      background-color: #000;
+      color: white;
       border: none;
-      padding: 12px;
-      color: #fff;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
     }
+
+    .mensagens {
+      margin-top: 2rem;
+    }
+
     .mensagem {
-      margin-top: 30px;
-      padding: 15px;
-      background: #292929;
-      border-left: 4px solid #ff004c;
-      border-radius: 8px;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-left: 4px solid #000;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Livro de Visitas</h1>
-    <p>Deixe seu recado, sugestão ou apoio para o grupo Músicas do Momento!</p>
+    <h1>Músicas do Momento</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="livro-de-visitas.html">Livro de Visitas</a>
+      <a href="vip.html">Área VIP</a>
+      <a href="mural.html">Mural</a>
+    </nav>
   </header>
+
   <main>
+    <h1>Livro de Visitas</h1>
+    <p>Deixe sua mensagem, seu elogio ou sugestão!</p>
+
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required />
-      <textarea name="mensagem" rows="4" placeholder="Sua mensagem..." required></textarea>
-      <button type="submit">Enviar recado</button>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+      <button type="submit">Enviar</button>
     </form>
 
-    <div class="mensagem">
-      <strong>Maria de Souza:</strong>
-      <p>Parabéns pelo trabalho! A playlist tá demais 🫶</p>
-    </div>
-
-    <div class="mensagem">
-      <strong>Lucas Ribeiro:</strong>
-      <p>Ajudar artistas independentes é essencial. Sucesso pra vocês!</p>
+    <div class="mensagens">
+      <h2>Mensagens Recentes</h2>
+      <div class="mensagem">
+        <strong>Camila:</strong>
+        <p>Amo essa iniciativa! Continuem divulgando talentos independentes!</p>
+      </div>
+      <div class="mensagem">
+        <strong>João Pedro:</strong>
+        <p>Descobri artistas incríveis aqui. Obrigado por esse trabalho!</p>
+      </div>
     </div>
   </main>
+
+  <footer>
+    &copy; 2025 Músicas do Momento - Todos os direitos reservados.
+  </footer>
 </body>
 </html>
