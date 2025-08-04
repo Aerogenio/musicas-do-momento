@@ -6,114 +6,38 @@
   <title>Livro de Visitas - Músicas do Momento</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #222;
-    }
-
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      padding: 0.8rem;
-      margin-top: 0.3rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    button {
-      margin-top: 1.5rem;
-      background: #000;
-      color: #fff;
-      padding: 0.8rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background: #222;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Músicas do Momento</h1>
+    <h1>🎵 Músicas do Momento</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="livro-de-visitas.html">Livro de Visitas</a>
+      <a href="index.html">Início</a>
+      <a href="livro.html">Livro de Visitas</a>
       <a href="vip.html">Área VIP</a>
-      <a href="mural.html">Mural</a>
+      <a href="chat.html">Chat</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
     </nav>
   </header>
 
   <main>
     <h1>Livro de Visitas</h1>
-    <p>Deixe sua mensagem, elogio, sugestão ou apoio ao nosso projeto musical!</p>
+    <p>Deixe sua mensagem de apoio ou comentário! Sua participação é muito importante para nós 🎤</p>
 
-    <form action="https://formspree.io/f/meqybqqv" method="POST">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required />
+    <form action="https://formsubmit.co/motoristajurandi@gmail.com" method="POST">
+      <label for="nome">Seu nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="_replyto" required />
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
 
-      <label for="message">Mensagem:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Enviar mensagem</button>
+      <button type="submit">Enviar</button>
     </form>
+
+    <p>Mensagens recebidas serão respondidas diretamente por e-mail ou publicadas (com sua permissão) na nossa página principal!</p>
   </main>
 
   <footer>
-    &copy; 2025 Músicas do Momento - Todos os direitos reservados.
+    &copy; 2025 Músicas do Momento. Todos os direitos reservados.
   </footer>
 </body>
 </html>
