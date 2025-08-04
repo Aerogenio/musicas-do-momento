@@ -1,75 +1,101 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Músicas do Momento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #1b1b1b;
-      color: #ffffff;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
     }header {
-  background-color: #ff0055;
-  padding: 20px;
+  background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') center/cover no-repeat;
+  padding: 5rem 1rem;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 28px;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
 }
 
 nav {
-  background-color: #111;
+  background-color: #1db954;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px 0;
+  gap: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 10px 15px;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  color: #00ffcc;
+  background-color: #333;
 }
 
 main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #2b2b2b;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
   text-align: center;
 }
 
-main p {
-  font-size: 18px;
-  line-height: 1.6;
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.highlight {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000080;
+}
+
+.highlight img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.highlight h2 {
+  color: #1db954;
+  margin-top: 1rem;
 }
 
 footer {
-  margin-top: 50px;
+  background-color: #111;
+  color: #ccc;
   text-align: center;
-  font-size: 14px;
-  color: #aaaaaa;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-.playlist-link {
-  display: block;
-  margin-top: 20px;
-  font-size: 18px;
-  color: #00ffcc;
+.external-links a {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #1db954;
+  color: #fff;
   text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.external-links a:hover {
+  background-color: #14833b;
 }
 
   </style>
@@ -81,15 +107,34 @@ footer {
     <a href="index.html">Home</a>
     <a href="doacoes.html">Doações</a>
     <a href="patrocinadores.html">Patrocinadores</a>
-    <a href="mural.html">Mural de Produtos</a>
+    <a href="mural.html">Mural</a>
     <a href="feedback.html">Feedback</a>
+    <a href="livro.html">Livro de Visitas</a>
+    <a href="vip.html">Área VIP</a>
+    <a href="chat.html">Chat</a>
   </nav>  <main>
-    <p>Bem-vindo ao portal <strong>Músicas do Momento</strong>, o lugar onde os artistas independentes ganham destaque e suas músicas ganham o mundo.</p><p>Explore nosso mural de produtos, envie seu feedback, apoie com doações ou veja nossos apoiadores.</p>
+    <h2>Unindo artistas independentes através da música</h2>
+    <p>Bem-vindo ao projeto Músicas do Momento! Nosso objetivo é promover talentos da música independente e criar uma comunidade de apoio e visibilidade para novos artistas. Descubra, ouça e compartilhe!</p><div class="highlights">
+  <div class="highlight">
+    <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947" alt="Artistas independentes">
+    <h2>Playlist Oficial</h2>
+    <p><a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">Clique aqui para ouvir</a></p>
+  </div>
+  <div class="highlight">
+    <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29" alt="Evento ao vivo">
+    <h2>Eventos ao Vivo</h2>
+    <p>Fique ligado na nossa Web TV e Rádio ao vivo!</p>
+  </div>
+</div>
 
-<a class="playlist-link" href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">🎵 Acesse nossa Playlist Oficial no YouTube</a>
+<div class="external-links">
+  <a href="https://aerogenio.github.io/musicas-do-momento/tv.html" target="_blank">TV Web ao Vivo</a>
+  <a href="https://aerogenio.github.io/musicas-do-momento/radio.html" target="_blank">Rádio Web</a>
+  <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">Canal no YouTube</a>
+</div>
 
   </main>  <footer>
-    © 2025 Músicas do Momento. Desenvolvido por Aerogenio.
+    &copy; 2025 Músicas do Momento. Todos os direitos reservados.
   </footer>
 </body>
 </html>
