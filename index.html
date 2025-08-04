@@ -1,140 +1,148 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Músicas do Momento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #fff;
-    }header {
-  background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') center/cover no-repeat;
-  padding: 5rem 1rem;
-  text-align: center;
-}
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
 
-header h1 {
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 2px 2px 8px #000;
-}
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
 
-nav {
-  background-color: #1db954;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+    header {
+      background-color: #161b22;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #30363d;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  background-color: #1a1a1a;
-  transition: background-color 0.3s;
-}
+    header h1 {
+      font-size: 2rem;
+      color: #58a6ff;
+    }
 
-nav a:hover {
-  background-color: #333;
-}
+    nav {
+      background-color: #21262d;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+    }
 
-main {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: 1px solid #30363d;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
 
-.highlights {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
+    nav a:hover {
+      background-color: #58a6ff;
+      color: #0d1117;
+    }
 
-.highlight {
-  background-color: #1e1e1e;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00000080;
-}
+    .banner {
+      text-align: center;
+      margin: 30px 20px;
+    }
 
-.highlight img {
-  max-width: 100%;
-  border-radius: 10px;
-}
+    .banner img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(88, 166, 255, 0.4);
+    }
 
-.highlight h2 {
-  color: #1db954;
-  margin-top: 1rem;
-}
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
 
-footer {
-  background-color: #111;
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+    .content h2 {
+      color: #58a6ff;
+      margin-bottom: 15px;
+    }
 
-.external-links a {
-  display: inline-block;
-  margin: 0.5rem 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #1db954;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-.external-links a:hover {
-  background-color: #14833b;
-}
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #161b22;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
 
+    .links-extras {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .links-extras a {
+      color: #58a6ff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Músicas do Momento</h1>
-  </header>  <nav>
-    <a href="index.html">Home</a>
+    <h1>Grupo Músicas do Momento</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="feedback.html">Feedback</a>
     <a href="doacoes.html">Doações</a>
     <a href="patrocinadores.html">Patrocinadores</a>
     <a href="mural.html">Mural</a>
-    <a href="feedback.html">Feedback</a>
-    <a href="livro.html">Livro de Visitas</a>
     <a href="vip.html">Área VIP</a>
+    <a href="livro.html">Livro de Visitas</a>
     <a href="chat.html">Chat</a>
-  </nav>  <main>
-    <h2>Unindo artistas independentes através da música</h2>
-    <p>Bem-vindo ao projeto Músicas do Momento! Nosso objetivo é promover talentos da música independente e criar uma comunidade de apoio e visibilidade para novos artistas. Descubra, ouça e compartilhe!</p><div class="highlights">
-  <div class="highlight">
-    <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947" alt="Artistas independentes">
-    <h2>Playlist Oficial</h2>
-    <p><a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">Clique aqui para ouvir</a></p>
-  </div>
-  <div class="highlight">
-    <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29" alt="Evento ao vivo">
-    <h2>Eventos ao Vivo</h2>
-    <p>Fique ligado na nossa Web TV e Rádio ao vivo!</p>
-  </div>
-</div>
+  </nav>
 
-<div class="external-links">
-  <a href="https://aerogenio.github.io/musicas-do-momento/tv.html" target="_blank">TV Web ao Vivo</a>
-  <a href="https://aerogenio.github.io/musicas-do-momento/radio.html" target="_blank">Rádio Web</a>
-  <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">Canal no YouTube</a>
-</div>
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80" alt="Música em união" />
+  </div>
 
-  </main>  <footer>
-    &copy; 2025 Músicas do Momento. Todos os direitos reservados.
+  <section class="content">
+    <h2>O que é o Músicas do Momento?</h2>
+    <p>
+      O Grupo Músicas do Momento é um Projeto Musical criado para que os artistas possam divulgar as suas músicas através da nossa rede de divulgação, que acontece através de diversos meios na internet em parceria com esses artistas, e com isso somamos forças junto aos artistas independentes. 
+      Nosso objetivo é criar uma vitrine musical, onde talentos podem se destacar através da nossa playlist, canal do YouTube, transmissões e rede de apoio.
+      Trabalhamos em colaboração para que sua música alcance o mundo. Seja bem-vindo à união que fortalece a arte!
+    </p>
+
+    <div class="links-extras">
+      <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">Canal YouTube</a>
+      <a href="https://sua-radio-web-link.com" target="_blank">Rádio Web</a>
+      <a href="https://sua-tv-ao-vivo-link.com" target="_blank">TV Ao Vivo</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Grupo Músicas do Momento • Desenvolvido por Aerogenio
   </footer>
+
 </body>
 </html>
