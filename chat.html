@@ -1,130 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chat - Músicas do Momento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background-color: #1b1b1b;
-      color: #ffffff;
-      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
     }
 
     header {
-      background-color: #ff0055;
+      background-color: #161b22;
       padding: 20px;
       text-align: center;
+      border-bottom: 2px solid #30363d;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 28px;
+      font-size: 2rem;
+      color: #58a6ff;
     }
 
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #2b2b2b;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
-
-    h2 {
-      color: #00ffcc;
-      margin-bottom: 20px;
-    }
-
-    #chat-box {
-      height: 300px;
-      overflow-y: auto;
-      background-color: #1f1f1f;
+    nav {
+      background-color: #21262d;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
       padding: 15px;
-      border-radius: 8px;
-      border: 1px solid #444;
+    }
+
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: 1px solid #30363d;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #58a6ff;
+      color: #0d1117;
+    }
+
+    .content {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .content h2 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .chat-box {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 20px;
+      height: 400px;
+      overflow-y: scroll;
       margin-bottom: 20px;
     }
 
-    #chat-box p {
-      margin: 8px 0;
-      font-size: 16px;
+    .chat-msg {
+      margin-bottom: 15px;
     }
 
-    #chat-form {
+    .chat-msg strong {
+      color: #58a6ff;
+    }
+
+    .input-area {
       display: flex;
       gap: 10px;
     }
 
-    #message {
+    .input-area input {
       flex: 1;
       padding: 10px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #30363d;
+      background-color: #0d1117;
+      color: #e6edf3;
     }
 
-    #send-btn {
+    .input-area button {
+      background-color: #58a6ff;
+      color: #0d1117;
+      border: none;
       padding: 10px 20px;
-      background-color: #ff0055;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: 0.3s;
     }
 
-    #send-btn:hover {
-      background-color: #e6004c;
+    .input-area button:hover {
+      background-color: #1f6feb;
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #161b22;
       text-align: center;
-      font-size: 14px;
-      color: #aaaaaa;
+      font-size: 0.9rem;
+      color: #8b949e;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Chat</h1>
+    <h1>Grupo Músicas do Momento</h1>
   </header>
 
-  <main>
-    <h2>Bate-papo da Comunidade</h2>
-    <div id="chat-box">
-      <p><strong>Admin:</strong> Bem-vindo ao chat da Músicas do Momento!</p>
-    </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="doacoes.html">Doações</a>
+    <a href="patrocinadores.html">Patrocinadores</a>
+    <a href="mural.html">Mural</a>
+    <a href="vip.html">Área VIP</a>
+    <a href="livro.html">Livro de Visitas</a>
+    <a href="chat.html">Chat</a>
+  </nav>
 
-    <form id="chat-form" onsubmit="sendMessage(event)">
-      <input type="text" id="message" placeholder="Digite sua mensagem..." required />
-      <button type="submit" id="send-btn">Enviar</button>
-    </form>
-  </main>
+  <section class="content">
+    <h2>Chat Entre Membros</h2>
+    <div class="chat-box" id="chatBox">
+      <div class="chat-msg"><strong>Ana:</strong> Olá, pessoal! 👋</div>
+      <div class="chat-msg"><strong>Lucas:</strong> Alguém já ouviu a nova música do Aerogenio?</div>
+      <!-- As mensagens novas vão aqui -->
+    </div>
+    <div class="input-area">
+      <input type="text" id="mensagem" placeholder="Digite sua mensagem..." />
+      <button onclick="enviarMensagem()">Enviar</button>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Músicas do Momento. Todos os direitos reservados.
+    © 2025 Grupo Músicas do Momento • Desenvolvido por Aerogenio
   </footer>
 
   <script>
-    function sendMessage(e) {
-      e.preventDefault();
-      const msg = document.getElementById('message').value.trim();
-      if (msg === '') return;
-
-      const chatBox = document.getElementById('chat-box');
-      const p = document.createElement('p');
-      p.innerHTML = '<strong>Você:</strong> ' + msg;
-      chatBox.appendChild(p);
-
-      chatBox.scrollTop = chatBox.scrollHeight;
-      document.getElementById('message').value = '';
+    function enviarMensagem() {
+      const input = document.getElementById("mensagem");
+      const chatBox = document.getElementById("chatBox");
+      if (input.value.trim() !== "") {
+        const novaMsg = document.createElement("div");
+        novaMsg.className = "chat-msg";
+        novaMsg.innerHTML = "<strong>Você:</strong> " + input.value;
+        chatBox.appendChild(novaMsg);
+        input.value = "";
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
     }
   </script>
+
 </body>
 </html>
