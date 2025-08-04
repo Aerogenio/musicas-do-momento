@@ -2,108 +2,133 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Músicas do Momento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #121212, #1f1f1f);
-      color: white;
       margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fff;
     }
+
     header {
-      background-color: #000;
-      padding: 20px;
+      background-color: #1f1f1f;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-      color: #00ff88;
+
+    header img {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      border-bottom: 3px solid #fabe0f;
     }
+
     nav {
-      background-color: #111;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
+      background-color: #222;
+      padding: 10px;
+      gap: 10px;
     }
+
     nav a {
-      color: #00ff88;
+      background-color: #fabe0f;
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 8px;
       text-decoration: none;
-      padding: 15px 20px;
-      display: block;
-      transition: 0.3s;
+      font-weight: bold;
+      transition: background 0.3s;
     }
+
     nav a:hover {
-      background-color: #00ff88;
-      color: black;
+      background-color: #ffd74d;
     }
+
     main {
       padding: 30px;
       text-align: center;
     }
-    section img {
-      max-width: 300px;
-      margin: 20px auto;
-      display: block;
+
+    main h1 {
+      color: #fabe0f;
+      font-size: 2em;
     }
+
+    .links {
+      margin-top: 30px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 8px 12px;
+      color: #00d9ff;
+      text-decoration: none;
+    }
+
     footer {
-      background-color: #000;
-      color: #aaa;
+      background-color: #1f1f1f;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Músicas do Momento</h1>
-    <p>A união dos artistas independentes do Brasil</p>
+    <img src="https://raw.githubusercontent.com/aerogenio/musicas-do-momento/main/banner-musicas-do-momento.jpg" alt="Banner Músicas do Momento" />
   </header>
 
   <nav>
     <a href="index.html">Início</a>
     <a href="vip.html">Área VIP</a>
-    <a href="mural.html">Mural</a>
     <a href="chat.html">Chat</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="mural.html">Mural</a>
     <a href="patrocinadores.html">Patrocinadores</a>
     <a href="doacoes.html">Doações</a>
-    <a href="feedback.html">Feedback</a>
     <a href="livro.html">Livro de Visitas</a>
   </nav>
 
   <main>
-    <section>
-      <h2>Bem-vindo ao Músicas do Momento</h2>
-      <p>Divulgando talentos, conectando oportunidades. Se você é um artista independente, essa é a sua casa.</p>
-      <img src="https://img.freepik.com/fotos-gratis/homem-tocando-guitarra-eletrica-em-um-palco-com-luzes-azuis-e-rosas_23-2151201942.jpg" alt="Artista tocando música"/>
-      <p><strong>🎧 Ouça nossa playlist oficial:</strong></p>
-      <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank" style="color:#00ff88;">Clique aqui para ouvir no YouTube</a>
-    </section>
+    <h1>Bem-vindo ao Músicas do Momento!</h1>
+    <p>Conectando artistas independentes ao público com força e atitude musical.</p>
 
-    <section>
-      <h3>🎙️ Sintonize nossa Rádio Web</h3>
-      <p><a href="https://sualinkdaradioaqui.com" target="_blank" style="color:#00ff88;">Ouvir Rádio Músicas do Momento</a></p>
-    </section>
+    <div class="links">
+      <p><strong>🎧 Ouça nossa playlist:</strong><br />
+        <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">
+          @musicasdomomentoplaylists no YouTube
+        </a>
+      </p>
 
-    <section>
-      <h3>📺 TV Web Ao Vivo</h3>
-      <p>Quando estivermos ao vivo, o link aparecerá aqui automaticamente.</p>
-    </section>
+      <p><strong>📻 Rádio Web:</strong><br />
+        <a href="#" target="_blank">[Inserir link da Rádio aqui]</a>
+      </p>
+
+      <p><strong>📺 TV Web (Ao Vivo):</strong><br />
+        <a href="#" target="_blank">[Inserir link da Transmissão aqui]</a>
+      </p>
+
+      <p><strong>📱 WhatsApp para shows, entrevistas e novos artistas:</strong><br />
+        <a href="https://wa.me/5521980282529" target="_blank">+55 21 98028-2529</a>
+      </p>
+    </div>
   </main>
 
-  <!-- Botão do WhatsApp -->
-  <a href="https://wa.me/5521980282529?text=Olá!%20Gostaria%20de%20falar%20com%20a%20equipe%20Músicas%20do%20Momento%20sobre%20shows%2C%20entrevistas%20ou%20divulgação." 
-     target="_blank" 
-     style="position:fixed; bottom:20px; right:20px; z-index:1000;">
-    <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" 
-         alt="Fale conosco no WhatsApp" 
-         style="width:60px; height:60px;">
-  </a>
-
   <footer>
-    <p>&copy; 2025 Músicas do Momento — Todos os direitos reservados.</p>
+    &copy; 2025 Músicas do Momento · Todos os direitos reservados
   </footer>
+
 </body>
 </html>
