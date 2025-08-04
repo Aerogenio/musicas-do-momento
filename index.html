@@ -1,117 +1,106 @@
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Músicas do Momento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #111;
-      color: #f0f0f0;
+      padding: 0;
+      background-color: #1b1b1b;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
     }
+
     header {
-      background-color: #e91e63;
+      background-color: #ff0055;
       padding: 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 28px;
     }
+
     nav {
-      background-color: #222;
+      background-color: #111;
       display: flex;
       justify-content: center;
-      gap: 15px;
+      flex-wrap: wrap;
       padding: 10px 0;
     }
+
     nav a {
-      color: #f0f0f0;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
+      margin: 10px 15px;
+      font-size: 16px;
+      transition: color 0.3s ease;
     }
+
     nav a:hover {
-      color: #e91e63;
+      color: #00ffcc;
     }
-    .container {
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
       padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #e91e63;
-    }
-    iframe {
-      border: none;
-      margin-top: 20px;
-    }
-    .button-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #e91e63;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #222;
+      background-color: #2b2b2b;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+    }
+
+    main p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaaaaa;
+    }
+
+    .playlist-link {
+      display: block;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #00ffcc;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>🎶 Músicas do Momento</h1>
-    <p>Unindo artistas independentes e celebrando a música!</p>
+    <h1>Músicas do Momento</h1>
   </header>
 
   <nav>
-    <a href="index.html">Início</a>
+    <a href="index.html">Home</a>
+    <a href="doacoes.html">Doações</a>
+    <a href="vip.html">Área VIP</a>
     <a href="mural.html">Mural</a>
-    <a href="area-vip.html">Área VIP</a>
+    <a href="livro.html">Livro de Visitas</a>
     <a href="chat.html">Chat</a>
-    <a href="livro-de-visitas.html">Livro de Visitas</a>
+    <a href="patrocinadores.html">Patrocinadores</a>
   </nav>
 
-  <div class="container">
-    <h2>🎤 Sobre o Projeto</h2>
-    <p>
-      O <strong>Grupo Músicas do Momento</strong> é um projeto ou uma iniciativa entre amigos, criado para fortalecer e ajudar os artistas independentes. O nosso objetivo principal é atuar na produção, criação e na divulgação das "músicas do momento", assim como tentar estabelecer uma cooperação e a união entre os cantores e os artistas independentes que são os nossos parceiros e também possuem interesses em comum que é o de poder divulgar e promover as suas músicas com agente, pois ganham visibilidade, fazendo parte automaticamente do nosso "celeiro/vitrine" musical, que é feito através da nossa playlist e dos nossos canais na internet e no YouTube!
-    </p>
+  <main>
+    <p>Bem-vindo ao portal <strong>Músicas do Momento</strong>, o lugar onde os artistas independentes ganham destaque e suas músicas ganham o mundo.</p>
 
-    <h2>📺 Transmissão ao Vivo</h2>
-    <p>Quando estivermos ao vivo, você poderá assistir aqui mesmo!</p>
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/LIVE_ID_AQUI" allowfullscreen></iframe>
+    <p>Explore nosso mural, participe do livro de visitas, apoie com doações ou torne-se VIP.</p>
 
-    <h2>🧩 Nossos Quadros</h2>
-    <ul>
-      <li><strong>A sua hora chegou</strong> – O momento do artista mostrar seu som para o público.</li>
-      <li><strong>Pontapé inicial</strong> – Lançamentos e destaques da semana.</li>
-      <li><strong>A hora do feedback</strong> – Reações e comentários sobre os artistas apresentados.</li>
-    </ul>
-
-    <h2>📱 Contato para shows e entrevistas</h2>
-    <p>Fale com a produção: <strong><a href="https://wa.me/5521980282529" target="_blank">21 98028-2529 (WhatsApp)</a></strong></p>
-
-    <h2>💰 Doações via Pix</h2>
-    <p>Chave Pix (e-mail): <strong>motoristajurandi@outlook.com</strong></p>
-    <img src="pix-qr-code.png" alt="QR Code Pix" width="200"/>
-
-    <h2>🎧 Playlist Oficial</h2>
-    <a class="button-link" href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">
-      🔗 Ouça agora no YouTube
-    </a>
-  </div>
+    <a class="playlist-link" href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">🎵 Acesse nossa Playlist Oficial no YouTube</a>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Músicas do Momento. Todos os direitos reservados.</p>
+    © 2025 Músicas do Momento. Desenvolvido por Aerogenio.
   </footer>
 </body>
 </html>
