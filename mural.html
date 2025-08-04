@@ -1,94 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mural - Músicas do Momento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #111111;
-      color: #f0f0f0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
+
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+
     header {
-      background-color: #e91e63;
+      background-color: #161b22;
       padding: 20px;
       text-align: center;
+      border-bottom: 2px solid #30363d;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2em;
+      font-size: 2rem;
+      color: #58a6ff;
     }
+
     nav {
-      background-color: #222222;
+      background-color: #21262d;
       display: flex;
-      justify-content: center;
-      gap: 15px;
-      padding: 10px;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
     }
+
     nav a {
-      color: #f0f0f0;
+      color: #e6edf3;
       text-decoration: none;
-      font-weight: bold;
+      padding: 10px 15px;
+      border: 1px solid #30363d;
+      border-radius: 5px;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      color: #e91e63;
+      background-color: #58a6ff;
+      color: #0d1117;
     }
-    .container {
-      padding: 20px;
-      max-width: 900px;
+
+    .content {
+      padding: 30px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-    .post {
-      background-color: #222222;
-      border-left: 5px solid #e91e63;
-      padding: 15px;
+
+    .content h2 {
+      color: #58a6ff;
       margin-bottom: 20px;
-      border-radius: 6px;
+      text-align: center;
     }
-    .post h3 {
+
+    .mural-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .item h3 {
+      margin-bottom: 10px;
+      color: #58a6ff;
+    }
+
+    .item p {
+      font-size: 0.9rem;
+      color: #c9d1d9;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 8px;
       margin-bottom: 10px;
     }
+
     footer {
-      background-color: #222222;
-      text-align: center;
-      padding: 20px;
       margin-top: 40px;
+      padding: 20px;
+      background-color: #161b22;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #8b949e;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Mural de Destaques</h1>
-    <p>Últimas notícias, artistas e novidades do projeto.</p>
+    <h1>Grupo Músicas do Momento</h1>
   </header>
 
   <nav>
     <a href="index.html">Início</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="doacoes.html">Doações</a>
+    <a href="patrocinadores.html">Patrocinadores</a>
     <a href="mural.html">Mural</a>
-    <a href="area-vip.html">Área VIP</a>
+    <a href="vip.html">Área VIP</a>
+    <a href="livro.html">Livro de Visitas</a>
     <a href="chat.html">Chat</a>
-    <a href="livro-de-visitas.html">Livro de Visitas</a>
   </nav>
 
-  <div class="container">
-    <div class="post">
-      <h3>🎵 Novos Singles do Aerogenio no ar!</h3>
-      <p>Confira agora “Anjonauta” e “Nostalgia de Tudo” na playlist e no canal!</p>
+  <section class="content">
+    <h2>Mural de Anúncios e Produtos</h2>
+    <div class="mural-grid">
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200?text=Produto+1" alt="Produto 1">
+        <h3>CD Autoral do Artista X</h3>
+        <p>Compre agora o álbum completo com músicas inéditas.</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200?text=Serviço+2" alt="Serviço 2">
+        <h3>Gravação de Clipes</h3>
+        <p>Produtora Y oferece gravações profissionais para artistas independentes.</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200?text=Produto+3" alt="Produto 3">
+        <h3>Camiseta Músicas do Momento</h3>
+        <p>Adquira a camiseta oficial e apoie o projeto!</p>
+      </div>
     </div>
-    <div class="post">
-      <h3>🚀 Novos talentos em destaque</h3>
-      <p>Estamos recebendo as novas músicas que vão estrear no próximo playlist Músicas do Momento!</p>
-    </div>
-    <div class="post">
-      <h3>📺 Nova Live chegando</h3>
-      <p>Acompanhe em breve nossa próxima transmissão em tempo real pelo canal!</p>
-    </div>
-  </div>
+  </section>
 
   <footer>
-    <p>© 2025 Músicas do Momento</p>
+    © 2025 Grupo Músicas do Momento • Desenvolvido por Aerogenio
   </footer>
+
 </body>
 </html>
