@@ -2,40 +2,108 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Patrocinadores - Músicas do Momento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #1db954;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #1db954;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .patrocinador {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px #00000080;
+    }
+
+    .patrocinador h2 {
+      color: #1db954;
+      margin-bottom: 0.5rem;
+    }
+
+    .patrocinador img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>🎵 Músicas do Momento</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="livro.html">Livro de Visitas</a>
-      <a href="vip.html">Área VIP</a>
-      <a href="chat.html">Chat</a>
-      <a href="patrocinadores.html">Patrocinadores</a>
-    </nav>
+    <h1>Patrocinadores</h1>
   </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="doacoes.html">Doações</a>
+    <a href="patrocinadores.html">Patrocinadores</a>
+    <a href="mural.html">Mural</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">Playlist 🎵</a>
+  </nav>
+
   <main>
-    <h1>Patrocinadores Oficiais</h1>
-    <p>Essa página é dedicada a todos que apoiam o projeto <strong>Músicas do Momento</strong> e contribuem com nossa missão de divulgar artistas independentes!</p>
+    <section class="patrocinador">
+      <h2>Nome do Patrocinador 1</h2>
+      <img src="https://via.placeholder.com/800x300" alt="Patrocinador 1">
+      <p>Descrição breve sobre este patrocinador e o apoio que ele oferece ao projeto.</p>
+    </section>
 
-    <h2>Apoie nosso projeto</h2>
-    <p>Faça uma doação via Pix para manter o site funcionando e nos ajudar a crescer:</p>
-    <p><strong>Chave Pix:</strong> <code>motoristajurandi@outlook.com</code></p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=motoristajurandi@outlook.com" alt="QR Code Pix" />
+    <section class="patrocinador">
+      <h2>Nome do Patrocinador 2</h2>
+      <img src="https://via.placeholder.com/800x300" alt="Patrocinador 2">
+      <p>Outro apoiador que acredita na força da música independente.</p>
+    </section>
 
-    <h2>Patrocinadores atuais</h2>
-    <ul>
-      <li><strong>DJ Xandão</strong> - R$ 50,00 mensais</li>
-      <li><strong>Estúdio Som de Rua</strong> - Equipamentos</li>
-      <li><strong>MC Luan</strong> - Divulgação em redes sociais</li>
-    </ul>
-
-    <p>Quer ver seu nome aqui? Entre em contato pelo WhatsApp: <a href="https://wa.me/5521980282529" target="_blank">(21) 98028-2529</a></p>
+    <!-- Você pode adicionar mais patrocinadores duplicando o bloco acima -->
   </main>
 
   <footer>
