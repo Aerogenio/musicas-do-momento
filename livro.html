@@ -1,125 +1,111 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Livro de Visitas - Músicas do Momento</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0f0f0f;
-      color: #fff;
-    }
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: #f1f1f1;
+}
 
-    header {
-      background-color: #1e1e1e;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ffc3;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
+header h1 {
+  font-size: 2rem;
+  color: #00ffc3;
+}
 
-    nav {
-      margin-top: 10px;
-    }
+nav {
+  margin-top: 10px;
+}
 
-    nav a {
-      margin: 0 10px;
-      color: #00ffcc;
-      text-decoration: none;
-    }
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+nav a:hover {
+  color: #00ffc3;
+}
 
-    main {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 195, 0.2);
+}
 
-    main h1 {
-      text-align: center;
-      color: #00ffcc;
-    }
+main h2 {
+  margin-bottom: 20px;
+  color: #00ffc3;
+  text-align: center;
+}
 
-    label {
-      display: block;
-      margin-top: 20px;
-      font-weight: bold;
-    }
+label {
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 8px;
-      background-color: #333;
-      border: 1px solid #555;
-      color: #fff;
-      border-radius: 5px;
-      resize: vertical;
-    }
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
 
-    button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      background-color: #00ffcc;
-      border: none;
-      color: #000;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
+button {
+  background-color: #00ffc3;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
 
-    button:hover {
-      background-color: #00cc99;
-    }
+button:hover {
+  background-color: #00cfa2;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1e1e1e;
-      margin-top: 40px;
-    }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
   </style>
 </head>
 <body>
   <header>
-    <h1>🎵 Músicas do Momento</h1>
+    <h1>Músicas do Momento</h1>
     <nav>
       <a href="index.html">Início</a>
       <a href="livro.html">Livro de Visitas</a>
       <a href="vip.html">Área VIP</a>
-      <a href="chat.html">Chat</a>
-      <a href="patrocinadores.html">Patrocinadores</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Deixe sua mensagem!</h1>
-    <form action="https://formsubmit.co/motoristajurandi@gmail.com" method="POST">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
-
-  <footer>
-    &copy; 2025 Músicas do Momento. Todos os direitos reservados.
-  </footer>
-</body>
-</html>
+      <a href="chat.html">
