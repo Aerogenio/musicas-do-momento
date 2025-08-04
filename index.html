@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,94 +11,84 @@
       background-color: #1b1b1b;
       color: #ffffff;
       font-family: 'Inter', sans-serif;
-    }
+    }header {
+  background-color: #ff0055;
+  padding: 20px;
+  text-align: center;
+}
 
-    header {
-      background-color: #ff0055;
-      padding: 20px;
-      text-align: center;
-    }
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+nav {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
 
-    nav {
-      background-color: #111;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 15px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px 15px;
-      font-size: 16px;
-      transition: color 0.3s ease;
-    }
+nav a:hover {
+  color: #00ffcc;
+}
 
-    nav a:hover {
-      color: #00ffcc;
-    }
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #2b2b2b;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  text-align: center;
+}
 
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #2b2b2b;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-      text-align: center;
-    }
+main p {
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-    main p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaaaaa;
+}
 
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 14px;
-      color: #aaaaaa;
-    }
+.playlist-link {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #00ffcc;
+  text-decoration: none;
+}
 
-    .playlist-link {
-      display: block;
-      margin-top: 20px;
-      font-size: 18px;
-      color: #00ffcc;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
   <header>
     <h1>Músicas do Momento</h1>
-  </header>
-
-  <nav>
+  </header>  <nav>
     <a href="index.html">Home</a>
     <a href="doacoes.html">Doações</a>
-    <a href="vip.html">Área VIP</a>
-    <a href="mural.html">Mural</a>
-    <a href="livro.html">Livro de Visitas</a>
-    <a href="chat.html">Chat</a>
     <a href="patrocinadores.html">Patrocinadores</a>
-  </nav>
+    <a href="mural.html">Mural de Produtos</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>  <main>
+    <p>Bem-vindo ao portal <strong>Músicas do Momento</strong>, o lugar onde os artistas independentes ganham destaque e suas músicas ganham o mundo.</p><p>Explore nosso mural de produtos, envie seu feedback, apoie com doações ou veja nossos apoiadores.</p>
 
-  <main>
-    <p>Bem-vindo ao portal <strong>Músicas do Momento</strong>, o lugar onde os artistas independentes ganham destaque e suas músicas ganham o mundo.</p>
+<a class="playlist-link" href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">🎵 Acesse nossa Playlist Oficial no YouTube</a>
 
-    <p>Explore nosso mural, participe do livro de visitas, apoie com doações ou torne-se VIP.</p>
-
-    <a class="playlist-link" href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">🎵 Acesse nossa Playlist Oficial no YouTube</a>
-  </main>
-
-  <footer>
+  </main>  <footer>
     © 2025 Músicas do Momento. Desenvolvido por Aerogenio.
   </footer>
 </body>
