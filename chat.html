@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,137 +7,123 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
-      color: #222;
+      background-color: #1b1b1b;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
     }
 
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
+      background-color: #ff0055;
+      padding: 20px;
       text-align: center;
     }
 
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
     }
 
     main {
       max-width: 800px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #2b2b2b;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
 
-    h1 {
-      margin-bottom: 1rem;
+    h2 {
+      color: #00ffcc;
+      margin-bottom: 20px;
     }
 
-    .chat-box {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 1rem;
+    #chat-box {
       height: 300px;
       overflow-y: auto;
-      background: #f9f9f9;
-      margin-bottom: 1rem;
+      background-color: #1f1f1f;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      margin-bottom: 20px;
     }
 
-    .message {
-      margin-bottom: 0.8rem;
+    #chat-box p {
+      margin: 8px 0;
+      font-size: 16px;
     }
 
-    .user {
-      font-weight: bold;
-    }
-
-    form {
+    #chat-form {
       display: flex;
-      gap: 1rem;
+      gap: 10px;
     }
 
-    input[type="text"] {
+    #message {
       flex: 1;
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-
-    button {
-      background: #000;
-      color: #fff;
-      padding: 0.8rem 1rem;
-      font-size: 1rem;
+      padding: 10px;
       border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
+      border-radius: 6px;
+      font-size: 16px;
     }
 
-    button:hover {
-      background: #222;
+    #send-btn {
+      padding: 10px 20px;
+      background-color: #ff0055;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #send-btn:hover {
+      background-color: #e6004c;
     }
 
     footer {
+      margin-top: 50px;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
+      font-size: 14px;
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Músicas do Momento</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="chat.html">Chat</a>
-      <a href="vip.html">Área VIP</a>
-      <a href="livro-de-visitas.html">Livro de Visitas</a>
-    </nav>
+    <h1>Chat</h1>
   </header>
 
   <main>
-    <h1>Chat da Comunidade</h1>
-    <p>Converse com outros ouvintes e artistas da playlist!</p>
-
-    <div class="chat-box" id="chat-box">
-      <div class="message"><span class="user">Ana:</span> Amei a nova música do Aerogenio 💜</div>
-      <div class="message"><span class="user">João:</span> Esse projeto tá muito top, parabéns!</div>
+    <h2>Bate-papo da Comunidade</h2>
+    <div id="chat-box">
+      <p><strong>Admin:</strong> Bem-vindo ao chat da Músicas do Momento!</p>
     </div>
 
-    <form onsubmit="sendMessage(event)">
-      <input type="text" id="user-message" placeholder="Digite sua mensagem..." required />
-      <button type="submit">Enviar</button>
+    <form id="chat-form" onsubmit="sendMessage(event)">
+      <input type="text" id="message" placeholder="Digite sua mensagem..." required />
+      <button type="submit" id="send-btn">Enviar</button>
     </form>
   </main>
 
   <footer>
-    &copy; 2025 Músicas do Momento - Todos os direitos reservados.
+    © 2025 Músicas do Momento. Todos os direitos reservados.
   </footer>
 
   <script>
-    function sendMessage(event) {
-      event.preventDefault();
-      const input = document.getElementById('user-message');
+    function sendMessage(e) {
+      e.preventDefault();
+      const msg = document.getElementById('message').value.trim();
+      if (msg === '') return;
+
       const chatBox = document.getElementById('chat-box');
-      const messageText = input.value.trim();
-      if (messageText !== '') {
-        const div = document.createElement('div');
-        div.className = 'message';
-        div.innerHTML = `<span class="user">Você:</span> ${messageText}`;
-        chatBox.appendChild(div);
-        chatBox.scrollTop = chatBox.scrollHeight;
-        input.value = '';
-      }
+      const p = document.createElement('p');
+      p.innerHTML = '<strong>Você:</strong> ' + msg;
+      chatBox.appendChild(p);
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+      document.getElementById('message').value = '';
     }
   </script>
 </body>
