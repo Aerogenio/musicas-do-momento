@@ -1,129 +1,162 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Músicas do Momento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f4ff;
-      color: #003366;
-    }
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  padding-bottom: 100px;
+}
 
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #0055aa;
-    }
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-    nav a {
-      color: white;
-      padding: 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
 
-    nav a:hover {
-      background-color: #003366;
-    }
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    main {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+.hero-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
 
-    section {
-      margin-bottom: 20px;
-    }
+.section {
+  margin-bottom: 30px;
+}
 
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-      z-index: 1000;
-    }
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  border-left: 5px solid #00ffff;
+  padding-left: 10px;
+}
 
-    .whatsapp-float:hover {
-      background-color: #128C7E;
-    }
+.links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
+.link-card {
+  flex: 1 1 calc(50% - 15px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.link-card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.link-card a {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .link-card {
+    flex: 1 1 100%;
+  }
+}
+
   </style>
 </head>
 <body>
-
   <header>
     <h1>Músicas do Momento</h1>
     <p>Unindo forças com os artistas independentes</p>
-  </header>
+  </header>  <div class="main-container">
+    <img class="hero-image" src="https://cdn.pixabay.com/photo/2016/11/22/19/13/microphone-1851512_1280.jpg" alt="Microfone"><div class="section">
+  <h2>Sobre o Projeto</h2>
+  <p>
+    O <strong>Músicas do Momento</strong> é um projeto musical criado para ajudar artistas independentes a divulgarem suas músicas por meio de uma grande rede de divulgação online, playlists, rádio web e conteúdo exclusivo.
+  </p>
+</div>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="vip.html">Área VIP</a>
-    <a href="mural.html">Mural</a>
-    <a href="doacoes.html">Doações</a>
-    <a href="patrocinadores.html">Patrocinadores</a>
-    <a href="livro.html">Livro de Visitas</a>
-    <a href="chat.html">Chat</a>
-    <a href="feedback.html">Feedback</a>
-    <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">YouTube</a>
-    <a href="https://sualinkdaradioaqui.com" target="_blank">Rádio Web</a>
-  </nav>
+<div class="section">
+  <h2>Quadros do Programa</h2>
+  <ul>
+    <li><strong>Pontapé Inicial</strong> – Onde novos talentos têm sua primeira chance de destaque.</li>
+    <li><strong>Sua Hora Chegou</strong> – Espaço para entrevistas e lançamentos de artistas em ascensão.</li>
+    <li><strong>A Hora do Feedback</strong> – O público interage e comenta as músicas enviadas.</li>
+  </ul>
+</div>
 
-  <main>
-    <section>
-      <h2>Sobre o Projeto</h2>
-      <p>
-        O <strong>Músicas do Momento</strong> é um Projeto Musical criado para que os artistas possam divulgar as suas músicas através da nossa rede de divulgação, que acontece através de diversos meios na internet em parceria com os cantores e/ou artistas, com isso somamos forças junto aos artistas independentes.
-      </p>
-      <p>
-        Nosso objetivo é criar uma vitrine musical, onde talentos podem se destacar através da nossa playlist, canal do YouTube, transmissões e rede de apoio.
-      </p>
-      <p>
-        Trabalhamos em colaboração para que sua música alcance o mundo. Seja bem-vindo à união que fortalece a arte!
-      </p>
-    </section>
+<div class="section">
+  <h2>Explore</h2>
+  <div class="links-grid">
+    <div class="link-card"><a href="vip.html">Área VIP</a></div>
+    <div class="link-card"><a href="mural.html">Mural de Artistas</a></div>
+    <div class="link-card"><a href="doacoes.html">Doações</a></div>
+    <div class="link-card"><a href="patrocinadores.html">Patrocinadores</a></div>
+    <div class="link-card"><a href="livro.html">Livro de Visitas</a></div>
+    <div class="link-card"><a href="chat.html">Chat</a></div>
+    <div class="link-card"><a href="feedback.html">Feedback</a></div>
+    <div class="link-card"><a href="https://youtube.com/@musicasdomomentoplaylists" target="_blank">YouTube</a></div>
+    <div class="link-card"><a href="https://sualinkdaradioaqui.com" target="_blank">Rádio Web</a></div>
+  </div>
+</div>
 
-    <section>
-      <h2>Quadros do Programa</h2>
-      <ul>
-        <li><strong>Pontapé Inicial</strong> – Onde novos talentos têm a primeira chance de mostrar sua música.</li>
-        <li><strong>Sua Hora Chegou</strong> – Artistas em destaque com entrevistas e lançamentos.</li>
-        <li><strong>A Hora do Feedback</strong> – Onde o público interage e comenta sobre as faixas enviadas.</li>
-      </ul>
-    </section>
-  </main>
-
-  <a class="whatsapp-float" href="https://wa.me/5521980282529" target="_blank">
-    Fale conosco no WhatsApp
-  </a>
-
-  <footer>
+  </div>  <a class="whatsapp-button" href="https://wa.me/5521980282529?text=Ol%C3%A1%2C%20gostaria%20de%20participar%20do%20projeto%20M%C3%BAsicas%20do%20Momento!" target="_blank">
+    💬 Fale com a equipe
+  </a>  <footer>
     &copy; 2025 Músicas do Momento. Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
