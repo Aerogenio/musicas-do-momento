@@ -5,119 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Patrocinadores - Músicas do Momento</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #222;
-    }
-
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    .patrocinadores {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .patrocinador {
-      text-align: center;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 1rem;
-      background: #fafafa;
-      transition: transform 0.3s;
-    }
-
-    .patrocinador:hover {
-      transform: scale(1.03);
-    }
-
-    .patrocinador img {
-      max-width: 100%;
-      height: 100px;
-      object-fit: contain;
-      margin-bottom: 1rem;
-    }
-
-    .patrocinador h3 {
-      margin: 0.5rem 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Músicas do Momento</h1>
+    <h1>🎵 Músicas do Momento</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="patrocinadores.html">Patrocinadores</a>
+      <a href="index.html">Início</a>
+      <a href="livro.html">Livro de Visitas</a>
       <a href="vip.html">Área VIP</a>
       <a href="chat.html">Chat</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
     </nav>
   </header>
 
   <main>
     <h1>Patrocinadores Oficiais</h1>
-    <p>Conheça quem acredita no nosso projeto e apoia a cena independente!</p>
+    <p>Essa página é dedicada a todos que apoiam o projeto <strong>Músicas do Momento</strong> e contribuem com nossa missão de divulgar artistas independentes!</p>
 
-    <div class="patrocinadores">
-      <div class="patrocinador">
-        <img src="https://via.placeholder.com/150x100?text=Logo+1" alt="Patrocinador 1" />
-        <h3>Marca Parceira 1</h3>
-        <p>Descrição breve sobre a empresa ou apoio.</p>
-      </div>
+    <h2>Apoie nosso projeto</h2>
+    <p>Faça uma doação via Pix para manter o site funcionando e nos ajudar a crescer:</p>
+    <p><strong>Chave Pix:</strong> <code>motoristajurandi@outlook.com</code></p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=motoristajurandi@outlook.com" alt="QR Code Pix" />
 
-      <div class="patrocinador">
-        <img src="https://via.placeholder.com/150x100?text=Logo+2" alt="Patrocinador 2" />
-        <h3>Marca Parceira 2</h3>
-        <p>Descrição breve sobre a empresa ou apoio.</p>
-      </div>
+    <h2>Patrocinadores atuais</h2>
+    <ul>
+      <li><strong>DJ Xandão</strong> - R$ 50,00 mensais</li>
+      <li><strong>Estúdio Som de Rua</strong> - Equipamentos</li>
+      <li><strong>MC Luan</strong> - Divulgação em redes sociais</li>
+    </ul>
 
-      <div class="patrocinador">
-        <img src="https://via.placeholder.com/150x100?text=Logo+3" alt="Patrocinador 3" />
-        <h3>Marca Parceira 3</h3>
-        <p>Descrição breve sobre a empresa ou apoio.</p>
-      </div>
-    </div>
+    <p>Quer ver seu nome aqui? Entre em contato pelo WhatsApp: <a href="https://wa.me/5521980282529" target="_blank">(21) 98028-2529</a></p>
   </main>
 
   <footer>
-    &copy; 2025 Músicas do Momento — Todos os direitos reservados.
+    &copy; 2025 Músicas do Momento. Todos os direitos reservados.
   </footer>
 </body>
 </html>
