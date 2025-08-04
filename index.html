@@ -4,134 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Músicas do Momento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-      color: #333;
-    }
-    header {
-      background-color: #1e1e1e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      gap: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      margin-top: 20px;
-      border-radius: 16px;
-    }
-    h2 {
-      color: #0066cc;
-    }
-    .quadro {
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      background-color: #222;
-      color: white;
-      padding: 20px;
-      margin-top: 30px;
-    }
-    .button {
-      display: inline-block;
-      background: #0066cc;
-      color: white;
-      padding: 10px 20px;
-      margin-top: 15px;
-      border-radius: 10px;
-      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
     }
   </style>
 </head>
-<body>
+<body class="bg-gradient-to-b from-gray-900 to-black text-white">
 
-  <header>
-    <h1>Grupo Músicas do Momento</h1>
-    <p>Unindo artistas independentes para divulgar sua música ao mundo</p>
+  <header class="bg-gray-800 shadow-lg p-6 text-center">
+    <h1 class="text-4xl font-bold text-yellow-400">Músicas do Momento</h1>
+    <p class="text-gray-300 mt-2">A vitrine dos artistas independentes</p>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#quadros">Quadros</a>
-    <a href="#chat">Chat</a>
-    <a href="/doacoes.html">Doações</a>
-    <a href="#vip">Área VIP</a>
-    <a href="#podcast">Podcast Ao Vivo</a>
-    <a href="#patrocinadores">Patrocinadores</a>
-  </nav>
+  <main class="p-6 max-w-5xl mx-auto">
 
-  <section id="sobre">
-    <h2>O que é o Músicas do Momento?</h2>
-    <p>O Grupo Músicas do Momento é uma organização sem fins lucrativos que reúne cantores e artistas independentes com o objetivo comum de promover a música. Nossa principal vitrine é a playlist "Músicas do Momento", além dos canais online e no YouTube.</p>
-  </section>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-yellow-300 mb-3">Sobre o Projeto</h2>
+      <p class="text-gray-200 leading-relaxed">
+        O Grupo Músicas do Momento é uma organização sem fins lucrativos. É a união de cantores e artistas independentes com o objetivo comum de promover a música dentro do nosso "celeiro/vitrine" musical, por meio da nossa playlist e canais na internet e no YouTube!
+      </p>
+    </section>
 
-  <section id="quadros">
-    <h2>Quadros do Programa</h2>
-    <div class="quadro">
-      <h3>A Sua Hora Chegou</h3>
-      <p>Espaço de estreia para novos talentos que estão chegando agora na cena musical.</p>
-    </div>
-    <div class="quadro">
-      <h3>Pontapé Inicial</h3>
-      <p>Para artistas que estão lançando seus primeiros trabalhos ou singles.</p>
-    </div>
-    <div class="quadro">
-      <h3>A Hora do Feedback</h3>
-      <p>Momento de escutar, comentar e valorizar as músicas enviadas por nossos seguidores.</p>
-    </div>
-  </section>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-yellow-300 mb-4">Quadros do Programa</h2>
+      <ul class="list-disc list-inside text-gray-200 space-y-2">
+        <li><strong>A sua hora chegou</strong> – Momento de estreia dos novos talentos.</li>
+        <li><strong>Pontapé inicial</strong> – Apresentação de artistas em início de carreira.</li>
+        <li><strong>A hora do feedback</strong> – Avaliação e apoio aos artistas.</li>
+      </ul>
+    </section>
 
-  <section id="chat">
-    <h2>Chat Interativo</h2>
-    <p>Converse ao vivo com outros ouvintes e artistas! (Em breve)</p>
-  </section>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-yellow-300 mb-4">Contato e Parcerias</h2>
+      <p class="text-gray-200">Para shows, entrevistas e eventos:</p>
+      <p class="text-yellow-400 font-bold text-lg mt-2">📞 WhatsApp: (21) 98028-2529</p>
+    </section>
 
-  <section id="podcast">
-    <h2>Podcast e Vídeos Ao Vivo</h2>
-    <p>Assista e participe das transmissões ao vivo com entrevistas, debates e música independente. (Área VIP)</p>
-  </section>
+    <section class="text-center py-10 bg-gray-800 rounded-xl shadow-md">
+      <h2 class="text-3xl font-bold text-white mb-4">🎧 Ouça Agora</h2>
+      <a href="#" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">Acesse a Playlist</a>
+    </section>
 
-  <section id="vip">
-    <h2>Área VIP Exclusiva</h2>
-    <p>Assinantes têm acesso a conteúdos exclusivos como vídeos, músicas inéditas, bastidores e muito mais.</p>
-    <a href="/vip.html" class="button">Entrar na Área VIP</a>
-  </section>
+  </main>
 
-  <section id="patrocinadores">
-    <h2>Patrocinadores e Destaques</h2>
-    <p>Apoie nosso projeto e tenha seu nome, empresa ou produto divulgado aqui.</p>
-    <ul>
-      <li><strong>Patrocinador 1</strong> - Empresa Exemplo</li>
-      <li><strong>Cantor em Destaque:</strong> Aerogenio Houpia</li>
-    </ul>
-    <p>Confira nossos produtos disponíveis na lojinha!</p>
-    <a href="/produtos.html" class="button">Ver Produtos</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Músicas do Momento. Todos os direitos reservados.</p>
+  <footer class="text-center text-gray-500 text-sm p-4 border-t border-gray-700 mt-10">
+    &copy; 2025 Músicas do Momento • Desenvolvido por Aerogenio Houpia
   </footer>
 
 </body>
