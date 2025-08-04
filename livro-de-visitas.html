@@ -10,7 +10,7 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f2f2f2;
+      background: #f5f5f5;
       color: #222;
     }
 
@@ -33,7 +33,7 @@
       margin: 2rem auto;
       background: #fff;
       padding: 2rem;
-      border-radius: 10px;
+      border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
@@ -46,34 +46,33 @@
       flex-direction: column;
     }
 
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
     input, textarea {
       padding: 0.8rem;
-      margin-bottom: 1rem;
+      margin-top: 0.3rem;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 1rem;
     }
 
     button {
+      margin-top: 1.5rem;
+      background: #000;
+      color: #fff;
       padding: 0.8rem;
-      background-color: #000;
-      color: white;
+      font-size: 1rem;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
     }
 
-    .mensagens {
-      margin-top: 2rem;
-    }
-
-    .mensagem {
-      background: #f9f9f9;
-      padding: 1rem;
-      border-left: 4px solid #000;
-      margin-bottom: 1rem;
-      border-radius: 6px;
+    button:hover {
+      background: #222;
     }
 
     footer {
@@ -97,25 +96,20 @@
 
   <main>
     <h1>Livro de Visitas</h1>
-    <p>Deixe sua mensagem, seu elogio ou sugestão!</p>
+    <p>Deixe sua mensagem, elogio, sugestão ou apoio ao nosso projeto musical!</p>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
-      <button type="submit">Enviar</button>
+    <form action="https://formspree.io/f/meqybqqv" method="POST">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="_replyto" required />
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar mensagem</button>
     </form>
-
-    <div class="mensagens">
-      <h2>Mensagens Recentes</h2>
-      <div class="mensagem">
-        <strong>Camila:</strong>
-        <p>Amo essa iniciativa! Continuem divulgando talentos independentes!</p>
-      </div>
-      <div class="mensagem">
-        <strong>João Pedro:</strong>
-        <p>Descobri artistas incríveis aqui. Obrigado por esse trabalho!</p>
-      </div>
-    </div>
   </main>
 
   <footer>
