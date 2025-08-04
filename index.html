@@ -1,134 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Músicas do Momento</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #121212;
-      color: #fff;
+      background: url('https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=1650&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #00ccff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding-bottom: 50px;
     }
 
     header {
-      background-color: #1f1f1f;
       text-align: center;
+      padding: 30px 20px 10px;
     }
 
-    header img {
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-      border-bottom: 3px solid #fabe0f;
+    header h1 {
+      color: #00ccff;
+      font-size: 2.5em;
+      margin: 0;
     }
 
     nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      background-color: #222;
-      padding: 10px;
       gap: 10px;
+      padding: 20px;
     }
 
     nav a {
-      background-color: #fabe0f;
+      background-color: #00ccff;
       color: #000;
+      text-decoration: none;
       padding: 10px 18px;
       border-radius: 8px;
-      text-decoration: none;
       font-weight: bold;
       transition: background 0.3s;
     }
 
     nav a:hover {
-      background-color: #ffd74d;
+      background-color: #66e5ff;
     }
 
-    main {
-      padding: 30px;
-      text-align: center;
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(20, 20, 20, 0.8);
+      border-radius: 12px;
+      margin-top: 30px;
     }
 
-    main h1 {
-      color: #fabe0f;
-      font-size: 2em;
+    .content p {
+      font-size: 1.1em;
+      line-height: 1.6em;
     }
 
     .links {
+      text-align: center;
       margin-top: 30px;
     }
 
     .links a {
       display: inline-block;
-      margin: 8px 12px;
-      color: #00d9ff;
+      margin: 10px;
+      color: #00ccff;
       text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
-      background-color: #1f1f1f;
       text-align: center;
-      padding: 15px;
-      color: #aaa;
-      margin-top: 40px;
+      color: #ccc;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+
+    /* WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
     }
 
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
       }
+
+      .content {
+        margin: 20px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <h1>Músicas do Momento</h1>
+    </header>
 
-  <header>
-    <img src="https://raw.githubusercontent.com/aerogenio/musicas-do-momento/main/banner-musicas-do-momento.jpg" alt="Banner Músicas do Momento" />
-  </header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="vip.html">Área VIP</a>
+      <a href="chat.html">Chat</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="mural.html">Mural</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
+      <a href="doacoes.html">Doações</a>
+      <a href="livro.html">Livro de Visitas</a>
+    </nav>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="vip.html">Área VIP</a>
-    <a href="chat.html">Chat</a>
-    <a href="feedback.html">Feedback</a>
-    <a href="mural.html">Mural</a>
-    <a href="patrocinadores.html">Patrocinadores</a>
-    <a href="doacoes.html">Doações</a>
-    <a href="livro.html">Livro de Visitas</a>
-  </nav>
-
-  <main>
-    <h1>Bem-vindo ao Músicas do Momento!</h1>
-    <p>Conectando artistas independentes ao público com força e atitude musical.</p>
-
-    <div class="links">
-      <p><strong>🎧 Ouça nossa playlist:</strong><br />
-        <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">
-          @musicasdomomentoplaylists no YouTube
-        </a>
+    <div class="content">
+      <p>
+        O <strong>Músicas do Momento</strong> é um Projeto Musical criado para que os artistas possam divulgar as suas músicas através da nossa rede de divulgação, que acontece através de diversos meios na internet em parceria com os cantores e/ou artistas, com isso somamos forças junto aos artistas independentes.
+      </p>
+      <p>
+        Nosso objetivo é criar uma vitrine musical, onde talentos podem se destacar através da nossa playlist, canal do YouTube, transmissões e rede de apoio.
+      </p>
+      <p>
+        Trabalhamos em colaboração para que sua música alcance o mundo. <strong>Seja bem-vindo à união que fortalece a arte!</strong>
       </p>
 
-      <p><strong>📻 Rádio Web:</strong><br />
-        <a href="#" target="_blank">[Inserir link da Rádio aqui]</a>
-      </p>
+      <div class="links">
+        <p><strong>🎧 Playlist no YouTube:</strong><br />
+          <a href="https://youtube.com/@musicasdomomentoplaylists?si=LRosT9MAYJUIpAQj" target="_blank">
+            @musicasdomomentoplaylists
+          </a>
+        </p>
 
-      <p><strong>📺 TV Web (Ao Vivo):</strong><br />
-        <a href="#" target="_blank">[Inserir link da Transmissão aqui]</a>
-      </p>
+        <p><strong>📻 Rádio Web:</strong><br />
+          <a href="#">[Insira aqui o link da rádio]</a>
+        </p>
 
-      <p><strong>📱 WhatsApp para shows, entrevistas e novos artistas:</strong><br />
-        <a href="https://wa.me/5521980282529" target="_blank">+55 21 98028-2529</a>
-      </p>
+        <p><strong>📺 TV Web (Ao Vivo):</strong><br />
+          <a href="#">[Insira aqui o link da transmissão]</a>
+        </p>
+      </div>
     </div>
-  </main>
 
-  <footer>
-    &copy; 2025 Músicas do Momento · Todos os direitos reservados
-  </footer>
+    <footer>
+      &copy; 2025 Músicas do Momento · Todos os direitos reservados
+    </footer>
+  </div>
 
+  <!-- WhatsApp Flutuante -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5521980282529" target="_blank" title="Fale conosco no WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+  </div>
 </body>
 </html>
